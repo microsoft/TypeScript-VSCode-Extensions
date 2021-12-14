@@ -25,4 +25,4 @@ jobs:
         env:
           VSCE_TOKEN: ${{ secrets.AZURE_PAN_TOKEN }}
         with:
-          preview: true
+          vsce-params: "--pre-release"
