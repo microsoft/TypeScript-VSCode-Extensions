@@ -2,7 +2,7 @@
 
 ## Deployment
 
-The extensions are deployed to the vscode extension after a merge as _preview_ builds.
+The extensions are deployed to the vscode extension after a merge as _preview_ builds. Trigger this [workflow to deploy to production](https://github.com/microsoft/TypeScript-VSCode-Extensions/actions/workflows/production-deploy.yml).
 
 #### The Token Stopped Working
 
