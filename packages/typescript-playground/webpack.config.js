@@ -55,11 +55,11 @@ const webExtensionConfig = {
 			process: 'process/browser', // provide a shim for the global `process` variable
 		}),
 		// The webview.js is running in a script context and has no access to `exports`, so drop it
-		new FindReplacePlugin({
-			src:  path.join(__dirname, 'dist/web/webview.js'),
-			dest: path.join(__dirname, 'dist/web/webview.js'),
-			rules: [{ find: /= exports;/g, replace: () =>  "= {}" }]
-		})
+		// new FindReplacePlugin({
+		// 	src:  path.join(__dirname, 'dist/web/webview.js'),
+		// 	dest: path.join(__dirname, 'dist/web/webview.js'),
+		// 	rules: [{ find: /= exports;/g, replace: () =>  "= {}" }]
+		// })
 
 	],
 	externals: {
