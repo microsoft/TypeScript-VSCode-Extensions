@@ -73,7 +73,7 @@ export function activate(context: vscode.ExtensionContext) {
 
             // This needs TS which means it has to run in the worker
 
-            // const params = new URLSearchParams(params)
+            // const params = new URLSearchParams(uri.query)
             // const compilerDefaults = getTSConfigForConfig(getDefaultSandboxCompilerOptions(false, {}))
             // memFs.writeFile(vscode.Uri.parse(`playfs:/tsconfig.json`), toBuffer(compilerDefaults), { create: true, overwrite: true, readonly: true });
         }

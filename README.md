@@ -1,5 +1,11 @@
 ## VS Code Extensions from the TypeScript Team
 
+## Extensions
+
+### [TypeScript Playground for VS Code](./packages/playground)
+
+An extension which runs a virtualized TypeScript project for safe exploration in learning and debugging TypeScript.
+
 ## Deployment
 
 The extensions are deployed to the vscode extension after a merge as _preview_ builds. Trigger this [workflow to deploy to production](https://github.com/microsoft/TypeScript-VSCode-Extensions/actions/workflows/production-deploy.yml).
