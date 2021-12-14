@@ -2,7 +2,7 @@
 
 ## Extensions
 
-### [TypeScript Playground for VS Code](./packages/playground)
+### [TypeScript Playground for VS Code](./packages/typescript-playground)
 
 An extension which runs a virtualized TypeScript project for safe exploration in learning and debugging TypeScript.
 
