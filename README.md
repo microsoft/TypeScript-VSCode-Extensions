@@ -1,14 +1,12 @@
-# Project
+## VS Code Extensions from the TypeScript Team
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+## Deployment
 
-As the maintainer of this project, please make a few updates:
+The extensions are deployed to the vscode extension after a merge as _preview_ builds.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+#### The Token Stopped Working
+
+Each access token lasts _180 days_. Which means, every half-year this token needs to be refreshed. To do this, have a TypeScript team member to https://dev.azure.com/TypeScript/_usersSettings/tokens to create a new token ([vscode's info on the process is here](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token)). (The key detail is to set Marketplace to manage") This token is then placed into the [GitHub Secrets](https://github.com/microsoft/TypeScript-VSCode-Extensions/settings/secrets/actions) section.
 
 ## Contributing
 
