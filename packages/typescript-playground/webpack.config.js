@@ -56,8 +56,8 @@ const webExtensionConfig = {
 		}),
 		// The webview.js is running in a script context and has no access to `exports`, so drop it
 		new FindReplacePlugin({
-			src: 'dist/web/webview.js',
-			dest: 'dist/web/webview.js',
+			src:  path.join(__dirname, 'dist/web/webview.js'),
+			dest: path.join(__dirname, 'dist/web/webview.js'),
 			rules: [{ find: /= exports;/g, replace: () =>  "= {}" }]
 		})
 
