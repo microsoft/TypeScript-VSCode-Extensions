@@ -1,0 +1,28 @@
+name: Ship preview builds on merge
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org"
+          cache: yarn
+
+      # Ensure everything is compiling
+      - run: "yarn install"
+
+      - uses: orta/monorepo-deploy-nightly@master
+        env:
+          VSCE_TOKEN: ${{ secrets.AZURE_PAN_TOKEN }}
+        with:
+          preview: true

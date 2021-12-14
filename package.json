@@ -1,0 +1,16 @@
+{
+  "name": "typescript-vscode-extensions",
+  "private": true,
+  "version": "0.0.0",
+  "repository": "https://github.com/microsoft/TypeScript-VSCode-Extensions.git",
+  "author": "TypeScript Team + Contributors",
+  "license": "MIT",
+  "engines": {
+    "yarn": "1.x"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
